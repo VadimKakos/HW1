@@ -23,21 +23,40 @@ public class Main {
 
         // третье задание
 
-        double bananasWeight = 5 * 80;
-        double milksWeight = 105 * 2;
-        double sundaeWeight = 2 * 100;
-        double aggsWeight = 4 * 70;
-        double allWeight = bananasWeight + milksWeight + sundaeWeight + aggsWeight;
+        int banana = 5;
+        int bananaWeight = 80;
+
+        int milk = 200/100;
+        int milkWeight = 105;
+
+        int iseCream = 2;
+        int iseCreamWeight = 100;
+
+        int agg = 4;
+        int aggWeight = 70;
+
+        int total = (banana * bananaWeight) + (milk * milkWeight) + (iseCream * iseCreamWeight) + (agg * aggWeight);
+
         int allWeightInKG = 1000;
-        double allWeightKG = allWeight / allWeightInKG;
-        System.out.println("Вес завтрака в граммах: " + allWeight + " гр." + "; " + " в килограммах: " + allWeightKG + " кг. ");
+        double totalInKG = (double)total / allWeightInKG;
+
+        System.out.println("Вес завтрака в граммах: " + total + " гр." + "; " + " в килограммах: " + totalInKG + " кг.");
 
         // четвортое задание
 
-        short firstApproatch = 7 * 1000 / 250;
-        short secondApproatch = 7 * 1000 / 500;
-        int average = (firstApproatch + secondApproatch) / 2;
-        System.out.println("Если будет терять 250 гр.:" + firstApproatch + " дней" + ";" + " если будет терять 500 гр.: " + secondApproatch + " дней" + " в среднем: " + average + " день");
+        int sportsmensWeight = 7;
+        int weightInKg = 1000;
+        int sportsmensWeightInKg = sportsmensWeight * weightInKg;
+
+        int minGramsPerDay = 250;
+        int maxGramsPerDay = 500;
+
+        int minDay = sportsmensWeightInKg / minGramsPerDay;
+        int maxDay = sportsmensWeightInKg / maxGramsPerDay;
+        int middleDay = (maxDay + minDay) / 2;
+
+        System.out.println("Минимальное количество дней: " + minDay + ";" + " максимальное количество дней: " + maxDay + ";" + " среднее количество дней: " + middleDay);
+
 
         // пятое задание
 
